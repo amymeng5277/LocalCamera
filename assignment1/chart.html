@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Love Amy</title>
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="http://code.highcharts.com/highcharts.js"></script>
+  <script type="text/javascript">
+    $(function () {
+      $('#container').highcharts({
+        title: {
+          text: 'Love Amy'
+        },
+        xAxis: {
+          minPadding: 0.05,
+          maxPadding: 0.05
+        },
+
+        series: [
+          {
+            data: [
+              [3, -2],
+              [-2, 0],
+              [6, 2]
+            ],
+            name: "Columbia"
+          },
+          {
+            data: [
+              [1, -2],
+              [2, -1],
+              [6, 0]
+            ],
+            name: "University"
+          },
+          {
+            data: [
+              [2, -2],
+              [2, 2]
+            ],
+            name: "Phillip"
+          },
+          {
+            data: [
+              [3, -4]
+            ],
+            name: "Lester"
+          },
+          {
+            data: [
+              [4, -2],
+              [4, 2]
+            ],
+            name: "Albert"
+          },
+          {
+            data: [
+              [5, -1],
+              [5, 2]
+            ],
+            name: "Hazel",
+          },
+          {
+            name: 'Intersection-Amy',
+            data: [
+              [3.00,-2.00],
+              [-2.00,0.00],
+              [1.00,-2.00],
+              [2.00,-1.00],
+              [1.57,-1.43],
+              [2.00,-2.00],
+              [2.00,2.00],
+              [2.00,-1.60],
+              [6.00,2.00],
+              [2.00,1.00],
+              [4.00,-2.00],
+              [4.00,2.00],
+              [4.00,1.50],
+              [5.00,-1.00],
+              [5.00,2.00],
+              [5.00,1.75],
+              [6.00,0.00],
+              [4.00,-0.50],
+              [5.00,-0.25],
+            ],
+            type: 'scatter'
+          }
+
+        ],
+
+        credits: {
+          enabled: false
+        },
+      });
+    });
+  </script>
+
+</head>
+<body>
+
+<div id="container" style="width: 900px;"></div>
+
+</body>
+</html>
